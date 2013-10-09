@@ -13,17 +13,17 @@ namespace iHealthlabs.OpenAPI.Sample.Library
     public class ConnectToiHealthlabs
     {
         #region You must modify this part
-        public string client_id = "cc3f7432dc33409******";
-        public string client_secret = "31c425e51a0c41******";
+        public string client_id = "e4dce2f7027044e0a6ce82e******";
+        public string client_secret = "bb6a0326db55468f8f474a******";
         public string redirect_uri = "http://localhost:9201/TestPage.aspx";
-        public string sc = "be5c4e0be6e54d3******";
-        public string sv_bp = "70723428bf134ff2a******";
-        public string sv_weight = "4e5141c702354dc49******";
-        public string sv_bg = "c25ce4f8ddaf4f4baed0******";
-        public string sv_bo = "92bae4fa0f1848538c7******";
-        public string sv_ar = "7f0e5424d8d645289c4******";
-        public string sv_sr = "c2c05b7ac78e4efcaec******";
-        public string sv_user = "0bd11250d5e443d5******";
+        public string sc = "082a65ac25db4262b795f******";
+        public string sv_OpenApiBP = "add22354420244ba9e0f3a5******";
+        public string sv_OpenApiWeight = "bd82a25dcf18446b90f32******";
+        public string sv_OpenApiBG = "978af9615739478ea29794e******";
+        public string sv_OpenApiSpO2 = "3ea83f3ca05342b5b862c******";
+        public string sv_OpenApiActivity = "34f4434741414722b15fb******";
+        public string sv_OpenApiSleep = "d7a1dfc8939742bca0a41e******";
+        public string sv_OpenApiUserInfo = "ba698f077b3843e8b2a3******";
 
         #endregion
 
@@ -128,7 +128,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_bp
+                    + "&sv=" + sv_OpenApiBP
                     + "&locale=" + aBPUnit;
 
                 if (pageIndex.HasValue)
@@ -176,7 +176,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_weight
+                    + "&sv=" + sv_OpenApiWeight
                     + "&locale=" + aWeightUnit;
 
                 if (pageIndex.HasValue)
@@ -223,7 +223,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_bg
+                    + "&sv=" + sv_OpenApiBG
                     + "&locale=" + aBGUnit;
                 if (pageIndex.HasValue)
                     url += "&page_index=" + pageIndex.Value;
@@ -269,7 +269,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_bo
+                    + "&sv=" + sv_OpenApiSpO2
                     + "&locale=" + aBOUnit;
 
                 if (pageIndex.HasValue)
@@ -316,7 +316,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_ar
+                    + "&sv=" + sv_OpenApiActivity
                     + "&locale=" + aARUnit;
 
                 if (pageIndex.HasValue)
@@ -363,7 +363,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_sr
+                    + "&sv=" + sv_OpenApiSleep
                     + "&locale=" + aSRUnit;
 
                 if (pageIndex.HasValue)
@@ -410,7 +410,7 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                     + "&client_secret=" + client_secret
                     + "&redirect_uri=" + redirect_uri
                     + "&sc=" + sc
-                    + "&sv=" + sv_user
+                    + "&sv=" + sv_OpenApiUserInfo
                     + "&locale=" + aUserUnit;
 
                 if (pageIndex.HasValue)
