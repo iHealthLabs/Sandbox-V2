@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +6,23 @@ using System.Runtime.Serialization;
 
 namespace iHealthlabs.OpenAPI.Sample.Library.Entity
 {
-    [DataContract]
-    public class DownloadBODataResultEntity
+    public class DownloadUserInfoResultEntity
     {
-        public void DownloadBGDataResultEntity() { }
         /// <summary>
         /// The page data
         /// </summary>
         [DataMember]
-        public List<DownloadBODataEntity> BODataList { get; set; }
-        /// <summary>
-        /// Current Total
-        /// </summary>
-        [DataMember]
-        public int CurrentRecordCount { get; set; }
+        public List<DownloadUserInfoDataEntity> UserInfoList { get; set; }
         /// <summary>
         /// Next page URL
         /// </summary>
         [DataMember]
         public string NextPageUrl { get; set; }
+        /// <summary>
+        /// Paging record number
+        /// </summary>
+        [DataMember]
+        public int CurrentRecordCount { get; set; }
         /// <summary>
         /// Page number
         /// </summary>
@@ -45,5 +43,15 @@ namespace iHealthlabs.OpenAPI.Sample.Library.Entity
         /// </summary>
         [DataMember]
         public int RecordCount { get; set; }
+        /// <summary>
+        /// Weight unit  0 kg   1 lbs
+        /// </summary>
+        [DataMember]
+        public int WeightUnit { get; set; }
+        /// <summary>
+        /// Height unit 0 cm 1 inches
+        /// </summary>
+        [DataMember]
+        public int HeightUnit { get; set; }
     }
 }
